@@ -50,3 +50,21 @@ body {
     border-radius: 1rem;
     cursor: pointer;
 }
+
+.btn:hover {
+    border-style: dotted;
+}
+
+#submit {
+    background: black;
+    color: #fff;
+    padding: 1.2rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#submit:hover {
+    border-color: #fff;
+    border-style: dotted;
+}
