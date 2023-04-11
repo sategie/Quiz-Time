@@ -64,7 +64,7 @@ let submitButton = document.getElementById("submit");
 
 function showQuestion() {
     // questionContent.innerHTML = questions[0].quest;
-    questionContent.innerHTML = questions[1].quest;
+    // questionContent.innerHTML = questions[1].quest;
     // questionContent.innerHTML = questions[2].quest;
     // questionContent.innerHTML = questions[3].quest;
 } 
