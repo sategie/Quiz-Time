@@ -30,15 +30,9 @@ const questions = [
 
 let questionContent = document.getElementById("question");
 let answerContent = document.getElementsByClassName("btn");
-let submitButton = document.getElementById("submit");
 
-// Define the functions and set the innerHTML
 
-function showQuestion() {
-    // questionContent.innerHTML = questions[0].quest;
-    // questionContent.innerHTML = questions[1].quest;
-    // questionContent.innerHTML = questions[2].quest;
-    // questionContent.innerHTML = questions[3].quest;
-} 
-showQuestion();
+
+
+
 
