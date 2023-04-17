@@ -1,58 +1,30 @@
-// Create Q&A array
-
-let questions = [
+const questions = [
     {
-        quest: "How many continents are there in the world?",
-        answers: [
-            {text:"5", correct:false},
-            {text:"7", correct:true},
-            {text:"8", correct:false},
-            {text:"9", correct:false}
-        ]
-        
+      quest: "How many continents are there in the world?",
+      answers: ["5", "7", "8", "9"], correctIndex: 1
     },
+  
     {
-        quest: "What is the capital of Nigeria?",
-        answers: [
-            {text:"Lagos", correct:false},
-            {text:"Ibadan", correct:false},
-            {text:"Abuja", correct:true},
-            {text:"Port-Harcourt", correct:false}
-        ]
-        
+      quest: "What is the capital of Nigeria?",
+      answers: ["Lagos", "Ibadan", "Abuja", "Port-Harcourt"], correctIndex: 2
     },
+  
     {
-        quest: "How many outfield players are there in football/soccer?",
-        answers: [
-            {text:"11", correct:false},
-            {text:"10", correct:true},
-            {text:"8", correct:false},
-            {text:"9", correct:false}
-        ]
-        
+      quest: "How many outfield players are there in football/soccer?",
+      answers: ["11", "10", "8", "9"], correctIndex: 1
     },
+  
     {
-        quest: "How many states are there in Germany?",
-        answers: [
-            {text:"16", correct:true},
-            {text:"7", correct:false},
-            {text:"8", correct:false},
-            {text:"9", correct:false}
-        ]
-        
+      quest: "How many states are there in Germany?",
+      answers: ["16", "7", "8", "9"], correctIndex: 0
     },
+  
     {
-        quest: "How many milliseconds are there in a second?",
-        answers: [
-            {text:"24", correct:false},
-            {text:"60", correct:false},
-            {text:"100", correct:false},
-            {text:"1000", correct:true}
-        ]
-        
+      quest: "How many milliseconds are there in a second?",
+      answers: ["24", "60", "100", "1000"], correctIndex: 3
     }
-
-];
+  
+  ];
 
 // Get the elements from HTML
 
