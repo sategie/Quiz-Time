@@ -31,7 +31,52 @@ const questions = [
 let questionContent = document.getElementById("question");
 let answerContent = document.getElementsByClassName("btn");
 
+//currentQuestionIndex is declared outside the showNexQuestion function to prevent the same question being repeated each time the function is called
 
+let currentQuestionIndex = 0;
+
+//Declare showNextQuestion function to set the textContent of the questions and answers
+
+function showNextQuestion() {
+
+  let currentQuestion = questions[currentQuestionIndex];
+
+  questionContent.textContent = currentQuestion.quest;
+
+  for (let i = 0; i < answerContent.length; i++) {
+    answerContent[i].textContent = currentQuestion.answers[i];
+  }
+
+  currentQuestionIndex++;
+
+  if (currentQuestionIndex >= questions.length) {
+    currentQuestionIndex = 0;
+  }
+}
+
+showNextQuestion();
+
+//Declare a selectAnswer function and add a click Event Listener to display a message depending on whether an answer is correct or not
+
+function selectAnswer(choiceIndex) {
+    let currentQuestion = questions[currentQuestionIndex];
+    let isCorrect = choiceIndex === currentQuestion.correctIndex;
+  
+    for (let i = 0; i < answerContent.length; i++) {
+      answerContent[i].addEventListener("click", function() {
+        if (isCorrect) {
+          alert("Awesome! You got it right!");
+        } else {
+          alert("Awww... that is incorrect");
+        }
+        showNextQuestion();
+      });
+    }
+  }
+  
+  selectAnswer();
+
+  
 
 
 
