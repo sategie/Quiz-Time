@@ -70,7 +70,7 @@ function showNextQuestion() {
   }
 }
 
-showNextQuestion();
+selectAnswer();
 
 //Declare a selectAnswer function and add a click Event Listener to display a message depending on whether an answer is correct or not
 
