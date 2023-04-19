@@ -31,6 +31,29 @@ body {
     text-align: center;
 }
 
+/*Add styling for the navigate div */
+
+#navigate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 50rem;
+    height: 100%;
+    margin: 10rem auto 0;
+  }
+
+  /*Add styling for the start quiz button */
+
+  #navigate #start-icon {
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    border: 0.5rem solid black;
+    border-radius: 2rem;
+  }
+
 #quiz #question {
     font-size: 2.5rem;
     font-weight: 500;
@@ -68,3 +91,9 @@ body {
     border-color: #fff;
     border-style: dotted;
 }
+
+/* Add styling for the hide class which will also be used in the Javascript */
+
+.hide {
+    display: none;
+  }
