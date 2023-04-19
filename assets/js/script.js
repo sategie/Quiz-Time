@@ -43,6 +43,14 @@ let currentQuestionIndex = 0;
 
 startIcon.addEventListener("click", startGame);
 
+// Define the startGame function to display the question when the Start Icon is clicked
+
+function startGame() {
+    startIcon.classList.add("hide");
+    quizContainer.classList.remove("hide");
+    showNextQuestion();
+  }
+
 //Declare showNextQuestion function to set the textContent of the questions and answers
 
 function showNextQuestion() {
