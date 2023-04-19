@@ -55,6 +55,10 @@ body {
     cursor: pointer;
   }
 
+  #start-icon:hover {
+    background-color: #d2fbd0
+  }
+
 #quiz #question {
     font-size: 2.5rem;
     font-weight: 500;
