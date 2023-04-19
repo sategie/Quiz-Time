@@ -1,3 +1,5 @@
+// Create Q&A array
+
 const questions = [
     {
       quest: "How many continents are there in the world?",
@@ -28,12 +30,18 @@ const questions = [
 
 // Get the elements from HTML
 
+let startIcon = document.getElementById("start-icon");
+let quizContainer = document.getElementById("quiz");
 let questionContent = document.getElementById("question");
 let answerContent = document.getElementsByClassName("btn");
 
 //currentQuestionIndex is declared outside the showNexQuestion function to prevent the same question being repeated each time the function is called
 
 let currentQuestionIndex = 0;
+
+// Add Event listener to start icon
+
+startIcon.addEventListener("click", startGame);
 
 //Declare showNextQuestion function to set the textContent of the questions and answers
 
