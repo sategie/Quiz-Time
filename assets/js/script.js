@@ -90,9 +90,6 @@ function selectAnswer(choiceIndex) {
     }
   }
   
-  selectAnswer();
-
-  
 
 
 
