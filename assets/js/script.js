@@ -33,7 +33,7 @@ const questions = [
 let startIcon = document.getElementById("start-icon");
 let quizContainer = document.getElementById("quiz");
 let questionContent = document.getElementById("question");
-let answerContent = document.getElementsByClassName("btn");
+
 
 //currentQuestionIndex is declared outside the showNexQuestion function to prevent the same question being repeated each time the function is called
 
@@ -54,6 +54,8 @@ function startGame() {
 //Declare showNextQuestion function to set the textContent of the questions and answers
 
 function showNextQuestion() {
+
+  let answerContent = document.getElementsByClassName("btn");
 
   let currentQuestion = questions[currentQuestionIndex];
 
