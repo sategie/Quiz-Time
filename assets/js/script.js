@@ -67,29 +67,33 @@ function showNextQuestion() {
 
   currentQuestionIndex++;
 
-  if (currentQuestionIndex >= questions.length) {
-    currentQuestionIndex = 0;
-  }
+//   if (currentQuestionIndex >= questions.length) {
+//     currentQuestionIndex = 0;
+//   }
 }
 
 selectAnswer();
 
 //Declare a selectAnswer function and add a click Event Listener to display a message depending on whether an answer is correct or not
 
-function selectAnswer(choiceIndex) {
+function selectAnswer() {
+    let answerContent = document.querySelectorAll(".btn");
     let currentQuestion = questions[currentQuestionIndex];
-    let isCorrect = choiceIndex === currentQuestion.correctIndex;
+    questionContent.textContent = currentQuestion.quest;
   
-    for (let i = 0; i < answerContent.length; i++) {
-      answerContent[i].addEventListener("click", function() {
-        if (isCorrect) {
-          alert("Awesome! You got it right!");
+    answerContent.forEach(function(element, index) {
+      element.textContent = currentQuestion.answers[index];
+  
+      element.addEventListener("click", function() {
+        if (currentQuestion.correctIndex === index) {
+          alert("Correct Answer!");
         } else {
-          alert("Awww... that is incorrect");
+          alert("Aww... that is incorrect");
         }
         showNextQuestion();
+  
       });
-    }
+    })
   }
   
 
