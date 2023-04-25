@@ -33,11 +33,13 @@ const questions = [
 let startIcon = document.getElementById("start-icon");
 let quizContainer = document.getElementById("quiz");
 let questionContent = document.getElementById("question");
+let answerContent = document.querySelectorAll(".btn");
 
 
 //currentQuestionIndex is declared outside the showNexQuestion function to prevent the same question being repeated each time the function is called
 
 let currentQuestionIndex = 0;
+let currentQuestion = questions[currentQuestionIndex];
 
 // Add Event listener to start icon
 
@@ -54,9 +56,7 @@ function startGame() {
 //Declare showNextQuestion function to set the textContent of the questions and answers
 
 function showNextQuestion() {
-
-  let answerContent = document.getElementsByClassName("btn");
-
+    
   let currentQuestion = questions[currentQuestionIndex];
 
   questionContent.textContent = currentQuestion.quest;
@@ -71,16 +71,8 @@ function showNextQuestion() {
 //     currentQuestionIndex = 0;
 //   }
 }
-
-selectAnswer();
-
-//Declare a selectAnswer function and add a click Event Listener to display a message depending on whether an answer is correct or not
-
-function selectAnswer() {
-    let answerContent = document.querySelectorAll(".btn");
-    let currentQuestion = questions[currentQuestionIndex];
-    questionContent.textContent = currentQuestion.quest;
-  
+    
+      
     answerContent.forEach(function(element, index) {
       element.textContent = currentQuestion.answers[index];
   
@@ -94,7 +86,6 @@ function selectAnswer() {
   
       });
     })
-  }
   
 
 
