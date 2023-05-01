@@ -34,10 +34,8 @@ let startIcon = document.getElementById("start-icon");
 let quizContainer = document.getElementById("quiz");
 let questionContent = document.getElementById("question");
 let answerContent = document.querySelectorAll(".btn");
-
-
-//currentQuestionIndex is declared outside the showNexQuestion function to prevent the same question being repeated each time the function is called
-
+let userScore = document.getElementById("score");
+let playAgain = document.getElementById("play");
 let currentQuestionIndex = 0;
 let currentQuestion = questions[currentQuestionIndex];
 
@@ -53,41 +51,21 @@ function startGame() {
     showNextQuestion();
   }
 
-//Declare showNextQuestion function to set the textContent of the questions and answers
+//Declare showNextQuestion function to run an endGame function when the game is over and set the questions and answers text content
 
 function showNextQuestion() {
-    
-  let currentQuestion = questions[currentQuestionIndex];
 
-  questionContent.textContent = currentQuestion.quest;
-
-  for (let i = 0; i < answerContent.length; i++) {
-    answerContent[i].textContent = currentQuestion.answers[i];
+  if (currentQuestionIndex >= questions.length) {
+    endGame();
+  } else {
+    currentQuestion = questions[currentQuestionIndex];
+    questionContent.textContent = currentQuestion.quest;
+    for (let i = 0; i < answerContent.length; i++) {
+      answerContent[i].textContent = currentQuestion.answers[i];
+    }
   }
-
   currentQuestionIndex++;
-
-//   if (currentQuestionIndex >= questions.length) {
-//     currentQuestionIndex = 0;
-//   }
 }
-    
-      
-    answerContent.forEach(function(element, index) {
-      element.textContent = currentQuestion.answers[index];
-  
-      element.addEventListener("click", function() {
-        if (currentQuestion.correctIndex === index) {
-          alert("Correct Answer!");
-        } else {
-          alert("Aww... that is incorrect");
-        }
-        showNextQuestion();
-  
-      });
-    })
-  
 
-
-
+// Define the checkAnswer function to check if the provided answer is correct
 
