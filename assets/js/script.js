@@ -87,3 +87,13 @@ answerContent.forEach(function(element, index) {
   });
 });
 
+// Add an endGame function to display the score of the user and a 'Play Again' button when the game is over
+function endGame() {
+  startIcon.classList.add("hide");
+  quizContainer.classList.add("hide");
+  userScore.textContent = "Your score is " + score + "/" + questions.length;
+  playAgain.classList.remove("hide");
+}
+
+playAgain.addEventListener("click", showNextQuestion);
+
