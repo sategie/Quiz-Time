@@ -49,6 +49,8 @@ startIcon.addEventListener("click", startGame);
 function startGame() {
     startIcon.classList.add("hide");
     quizContainer.classList.remove("hide");
+    userScore.classList.add("hide");
+  playAgain.classList.add("hide");
     showNextQuestion();
   }
 
@@ -93,6 +95,7 @@ answerContent.forEach(function(element, index) {
 function endGame() {
   startIcon.classList.add("hide");
   quizContainer.classList.add("hide");
+  userScore.classList.remove("hide");
   userScore.textContent = "Your score is " + score + "/" + questions.length;
   playAgain.classList.remove("hide");
 }
