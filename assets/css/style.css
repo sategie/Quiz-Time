@@ -31,6 +31,7 @@ body {
     text-align: center;
 }
 
+
 /*Add styling for the navigate div */
 
 #navigate {
@@ -42,6 +43,33 @@ body {
     max-width: 50rem;
     height: 100%;
     margin: 10rem auto 0;
+  }
+
+  /* Add styling for the score div */
+
+  #navigate #score {
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    cursor: pointer;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  /* Add styling for the 'Play Again' button */
+
+  #navigate #play {
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    border: 0.5rem solid black;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+
+  #navigate #play:hover {
+    background-color: #d2fbd0;
   }
 
   /*Add styling for the start quiz button */
