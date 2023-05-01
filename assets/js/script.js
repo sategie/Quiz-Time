@@ -69,3 +69,21 @@ function showNextQuestion() {
 
 // Define the checkAnswer function to check if the provided answer is correct
 
+function checkAnswer(index) {
+  if (currentQuestion.correctIndex === index) {
+    score++;
+    alert("Correct Answer!");
+  } else {
+    alert("Aww... that is incorrect");
+  }
+  showNextQuestion();
+}
+
+// Add Event listener to each answer button
+
+answerContent.forEach(function(element, index) {
+  element.addEventListener("click", function() {
+    checkAnswer(index);
+  });
+});
+
