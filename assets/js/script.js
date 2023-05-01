@@ -35,6 +35,7 @@ let quizContainer = document.getElementById("quiz");
 let questionContent = document.getElementById("question");
 let answerContent = document.querySelectorAll(".btn");
 let userScore = document.getElementById("score");
+let score = 0;
 let playAgain = document.getElementById("play");
 let currentQuestionIndex = 0;
 let currentQuestion = questions[currentQuestionIndex];
