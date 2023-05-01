@@ -89,6 +89,7 @@ answerContent.forEach(function(element, index) {
 });
 
 // Add an endGame function to display the score of the user and a 'Play Again' button when the game is over
+
 function endGame() {
   startIcon.classList.add("hide");
   quizContainer.classList.add("hide");
@@ -97,4 +98,12 @@ function endGame() {
 }
 
 playAgain.addEventListener("click", showNextQuestion);
+
+// Add Event listener to the 'Play Again' button which resets the questions index and score, and calls the startGame function
+
+playAgain.addEventListener("click", function() {
+  currentQuestionIndex = 0;
+  score = 0;
+  startGame();
+});
 
