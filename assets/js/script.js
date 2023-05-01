@@ -97,8 +97,6 @@ function endGame() {
   playAgain.classList.remove("hide");
 }
 
-playAgain.addEventListener("click", showNextQuestion);
-
 // Add Event listener to the 'Play Again' button which resets the questions index and score, and calls the startGame function
 
 playAgain.addEventListener("click", function() {
