@@ -44,6 +44,10 @@ let currentQuestion = questions[currentQuestionIndex];
 
 startIcon.addEventListener("click", startGame);
 
+// Define a shuffledQuestions variable to randomize the questions
+
+let shuffledQuestions = questions.sort(() => Math.random() - .5);
+
 // Define the startGame function to display the question when the Start Icon is clicked
 
 function startGame() {
@@ -58,10 +62,10 @@ function startGame() {
 
 function showNextQuestion() {
 
-  if (currentQuestionIndex >= questions.length) {
+  if (currentQuestionIndex >= shuffledQuestions.length) {
     endGame();
   } else {
-    currentQuestion = questions[currentQuestionIndex];
+    currentQuestion = shuffledQuestions[currentQuestionIndex];
     questionContent.textContent = currentQuestion.quest;
     for (let i = 0; i < answerContent.length; i++) {
       answerContent[i].textContent = currentQuestion.answers[i];
