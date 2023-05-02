@@ -104,11 +104,14 @@ function endGame() {
   playAgain.classList.remove("hide");
 }
 
-// Add Event listener to the 'Play Again' button which resets the questions index and score, and calls the startGame function
-
+// Add Event listener to the 'Play Again' button which resets the questions index and score, shuffles the questions array and calls the startGame function
 playAgain.addEventListener("click", function() {
   currentQuestionIndex = 0;
   score = 0;
+  // Use the slice method to create a new array with the current questions and then shuffle the array using the sort method
+  shuffledQuestions = questions.slice().sort(() => Math.random() - 0.5);
   startGame();
 });
+
+
 
