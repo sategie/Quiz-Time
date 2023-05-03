@@ -24,7 +24,9 @@ const questions = [
     {
       quest: "How many milliseconds are there in a second?",
       answers: ["24", "60", "100", "1000"], correctIndex: 3
-    }
+    },
+
+
   
   ];
 
@@ -74,16 +76,36 @@ function showNextQuestion() {
   currentQuestionIndex++;
 }
 
-// Define the checkAnswer function to check if the provided answer is correct
+// Define the checkAnswer function to check if the provided answer is correct or not and alert the user accordingly
 
 function checkAnswer(index) {
   if (currentQuestion.correctIndex === index) {
     score++;
-    alert("Correct Answer!");
+    Swal.fire({
+      title: 'Correct answer!',
+      icon: 'success',
+      showCancelButton: false,
+      confirmButtonColor: '#3085d6',
+      confirmButtonText: 'Next Question'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        showNextQuestion();
+      }
+    });
   } else {
-    alert("Aww... that is incorrect");
+    Swal.fire({
+      title: 'Wrong answer!',
+      text: 'The correct answer is ' + currentQuestion.answers[currentQuestion.correctIndex],
+      icon: 'error',
+      showCancelButton: false,
+      confirmButtonColor: '#3085d6',
+      confirmButtonText: 'Next Question'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        showNextQuestion();
+      }
+    });
   }
-  showNextQuestion();
 }
 
 // Add Event listener to each answer button
