@@ -94,7 +94,7 @@ function checkAnswer(index) {
     });
   } else {
     Swal.fire({
-      title: 'Wrong Answer! The correct answer is ' + currentQuestion.answers[currentQuestion.correctIndex],
+      title: 'Wrong Answer!\n The correct answer is ' + currentQuestion.answers[currentQuestion.correctIndex],
       icon: 'error',
       showCancelButton: false,
       confirmButtonColor: '#3085d6',
