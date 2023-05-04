@@ -24,10 +24,8 @@ const questions = [
     {
       quest: "How many milliseconds are there in a second?",
       answers: ["24", "60", "100", "1000"], correctIndex: 3
-    },
+    }
 
-
-  
   ];
 
 // Get the elements from HTML
