@@ -26,6 +26,7 @@ body {
 }
 
 #container h1 {
+    color: #ff7800;
     font-size: 4rem;
     border: 0.5rem solid black;
     border-radius: 2rem;
@@ -110,6 +111,8 @@ body {
     margin-top: 2rem;
   }
 
+  /* Add styling for the choice buttons */
+
 .btn {
     width: 100%;
     font-size: 1.6rem;
@@ -123,8 +126,9 @@ body {
 }
 
 .btn:hover {
-    border-style: dotted;
-}
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.2);
+  }
 
 /* Add styling for the hide class which will also be used in the Javascript */
 
