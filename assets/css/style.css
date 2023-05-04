@@ -35,8 +35,6 @@ body {
     text-align: center;
   }
 
-
-
 /*Add styling for the navigate div */
 
 #navigate {
@@ -58,7 +56,10 @@ body {
     font-size: 3rem;
     cursor: pointer;
     text-align: center;
-    padding-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    color: #850000;
+    margin-bottom: 2rem;
   }
 
   /* Add styling for the 'Play Again' button */
