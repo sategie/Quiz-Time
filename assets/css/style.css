@@ -72,6 +72,7 @@ body {
     border-radius: 2rem;
     cursor: pointer;
     margin-bottom: 2rem;
+    color: #850000;
   }
 
   #navigate #play:hover {
@@ -87,6 +88,7 @@ body {
     border: 0.5rem solid black;
     border-radius: 2rem;
     cursor: pointer;
+    color: #850000;
   }
 
   #start-icon:hover {
