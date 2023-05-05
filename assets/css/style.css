@@ -85,6 +85,8 @@ body {
 
   #navigate #play:hover {
     background-color: #d2fbd0;
+    transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.2);
   }
 
   /*Add styling for the start quiz button */
