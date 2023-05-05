@@ -81,33 +81,34 @@ function showNextQuestion() {
 // Define the checkAnswer function to check if the provided answer is correct or not and alert the user accordingly
 
 function checkAnswer(index) {
-  if (currentQuestion.correctIndex === index) {
-    score++;
-    Swal.fire({
-      title: 'Correct answer!',
-      icon: 'success',
-      showCancelButton: false,
-      confirmButtonColor: '#3085d6',
-      confirmButtonText: 'Next Question'
-    }).then((result) => {
-      if (result.isConfirmed) {
-        showNextQuestion();
-      }
-    });
-  } else {
-    Swal.fire({
-      title: 'Wrong Answer!\n The correct answer is ' + currentQuestion.answers[currentQuestion.correctIndex],
-      icon: 'error',
-      showCancelButton: false,
-      confirmButtonColor: '#3085d6',
-      confirmButtonText: 'Next Question'
-    }).then((result) => {
-      if (result.isConfirmed) {
-        showNextQuestion();
-      }
-    });
+    if (currentQuestion.correctIndex === index) {
+      score++;
+      Swal.fire({
+        title: "Correct Answer!",
+        icon: "success",
+        showCancelButton: false,
+        confirmButtonColor: "#3085d6",
+        confirmButtonText: "Next Question"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          showNextQuestion();
+        }
+      });
+    } else {
+      Swal.fire({
+        title: "Wrong Answer!",
+        text: "The correct answer is " + currentQuestion.answers[currentQuestion.correctIndex],
+        icon: "error",
+        showCancelButton: false,
+        confirmButtonColor: "#3085d6",
+        confirmButtonText: "Next Question"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          showNextQuestion();
+        }
+      });
+    }
   }
-}
 
 // Add Event listener to each answer button
 
