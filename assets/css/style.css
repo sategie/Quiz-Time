@@ -157,3 +157,12 @@ body {
   .swal2-title {
     font-size: 2rem !important;
   }
+
+  .swal2-actions {
+    font-size: 2rem;
+  }
+
+  #swal2-html-container {
+    color: green;
+    font-size: 2rem;
+  }
