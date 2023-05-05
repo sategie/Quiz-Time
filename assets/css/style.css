@@ -35,6 +35,13 @@ body {
     text-align: center;
   }
 
+  #container h2 {
+    color: black;
+    font-size: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
 /*Add styling for the navigate div */
 
 #navigate {

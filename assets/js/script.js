@@ -39,6 +39,8 @@ let score = 0;
 let playAgain = document.getElementById("play");
 let currentQuestionIndex = 0;
 let currentQuestion = questions[currentQuestionIndex];
+let questionNumber = document.getElementById("question-number");
+let questionCount = 1;
 
 // Add Event listener to start icon
 
@@ -61,7 +63,7 @@ function startGame() {
 //Declare showNextQuestion function to run an endGame function when the game is over and set the questions and answers text content
 
 function showNextQuestion() {
-
+    questionNumber.textContent = "Question " + questionCount + " of " + questions.length;
   if (currentQuestionIndex >= shuffledQuestions.length) {
     endGame();
   } else {
@@ -72,6 +74,7 @@ function showNextQuestion() {
     }
   }
   currentQuestionIndex++;
+//   questionCount++;
 }
 
 // Define the checkAnswer function to check if the provided answer is correct or not and alert the user accordingly
