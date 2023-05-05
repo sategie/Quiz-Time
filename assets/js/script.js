@@ -131,6 +131,8 @@ function endGame() {
 playAgain.addEventListener("click", function() {
   currentQuestionIndex = 0;
   score = 0;
+  questionCount = 1;
+  questionNumber.classList.remove("hide");
   // Use the slice method to create a new array with the current questions and then shuffle the array using the sort method
   shuffledQuestions = questions.slice().sort(() => Math.random() - 0.5);
   startGame();
