@@ -124,6 +124,7 @@ function endGame() {
   userScore.classList.remove("hide");
   userScore.textContent = "Your score is " + score + "/" + questions.length;
   playAgain.classList.remove("hide");
+  questionNumber.classList.add("hide");
 }
 
 // Add Event listener to the 'Play Again' button which resets the questions index and score, shuffles the questions array and calls the startGame function
