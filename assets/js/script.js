@@ -57,6 +57,7 @@ function startGame() {
     quizContainer.classList.remove("hide");
     userScore.classList.add("hide");
   playAgain.classList.add("hide");
+  questionNumber.classList.remove("hide");
     showNextQuestion();
   }
 
