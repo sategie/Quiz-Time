@@ -74,7 +74,7 @@ function showNextQuestion() {
     }
   }
   currentQuestionIndex++;
-//   questionCount++;
+  questionCount++;
 }
 
 // Define the checkAnswer function to check if the provided answer is correct or not and alert the user accordingly
