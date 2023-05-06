@@ -60,12 +60,13 @@ body {
   #navigate #score {
     width: 100%;
     height: 100%;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: bolder;
     cursor: pointer;
     text-align: center;
     padding: 1rem;
     background-color: #fff;
-    color: #850000;
+    color: black;
     margin-bottom: 2rem;
   }
 

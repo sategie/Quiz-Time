@@ -9,17 +9,20 @@
     <title>Quiz Time</title>
 </head>
 <body>
-    <div id="container">
+    <main id="container">
+        <header>
         <h1>Quiz Time</h1>
-        <h2 id="question-number" class="hide">Question Number</h2>
+    </header>
+        
 
-        <div id="navigate">
+        <nav id="navigate">
+            <h2 id="question-number" class="hide">Question Number</h2>
             <p id="score" class="hide">Score: 0</p>
             <button id="play" class="hide">Play Again</button>
             <button id="start-icon">Start Quiz</button>
-        </div>
+        </nav>
 
-        <div id="quiz" class="hide">
+        <section id="quiz" class="hide">
             <p id="question">Question Field</p>
             <div id="option">
                 <button class="btn">Option A</button>
@@ -28,12 +31,12 @@
                 <button class="btn">Option D</button>
             </div>
 
-        </div>
+        </section>
 
 
         
 
-    </div>
+    </main>
 
 
 <script src="assets/js/script.js"></script>   
