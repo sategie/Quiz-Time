@@ -35,14 +35,7 @@ body {
     text-align: center;
   }
 
-  #container h2 {
-    color: black;
-    font-size: 3rem;
-    margin-top: 3rem;
-    text-align: center;
-  }
-
-/*Add styling for the navigate div */
+/*Add styling for the navigation*/
 
 #navigate {
     display: flex;
@@ -55,7 +48,16 @@ body {
     margin: 10rem auto 0;
   }
 
-  /* Add styling for the score div */
+  /* Add styling for h2 */
+
+  #navigate h2 {
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  /* Add styling for the score */
 
   #navigate #score {
     width: 100%;
