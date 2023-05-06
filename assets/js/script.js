@@ -89,6 +89,8 @@ function checkAnswer(index) {
         title: "Correct answer!",
         icon: "success",
         showCancelButton: false,
+        allowOutsideClick: false,
+        allowEscapeKey: false,
         confirmButtonColor: "#3085d6",
         confirmButtonText: rule ? "Finish Quiz" : "Next Question"
       }).then((result) => {
@@ -106,6 +108,8 @@ function checkAnswer(index) {
         text: "The correct answer is " + correctAnswer,
         icon: "error",
         showCancelButton: false,
+        allowOutsideClick: false,
+        allowEscapeKey: false,
         confirmButtonColor: "#3085d6",
         confirmButtonText: rule ? "Finish Quiz" : "Next Question"
       }).then((result) => {
