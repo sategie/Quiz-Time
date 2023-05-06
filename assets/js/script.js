@@ -81,30 +81,40 @@ function showNextQuestion() {
 // Define the checkAnswer function to check if the provided answer is correct or not and alert the user accordingly
 
 function checkAnswer(index) {
+    let rule = currentQuestionIndex === questions.length;
+    let correctAnswer = currentQuestion.answers[currentQuestion.correctIndex];
     if (currentQuestion.correctIndex === index) {
       score++;
       Swal.fire({
-        title: "Correct Answer!",
+        title: "Correct answer!",
         icon: "success",
         showCancelButton: false,
         confirmButtonColor: "#3085d6",
-        confirmButtonText: "Next Question"
+        confirmButtonText: rule ? "Finish Quiz" : "Next Question"
       }).then((result) => {
         if (result.isConfirmed) {
-          showNextQuestion();
+          if (rule) {
+            endGame();
+          } else {
+            showNextQuestion();
+          }
         }
       });
     } else {
       Swal.fire({
         title: "Wrong Answer!",
-        text: "The correct answer is " + currentQuestion.answers[currentQuestion.correctIndex],
+        text: "The correct answer is " + correctAnswer,
         icon: "error",
         showCancelButton: false,
         confirmButtonColor: "#3085d6",
-        confirmButtonText: "Next Question"
+        confirmButtonText: rule ? "Finish Quiz" : "Next Question"
       }).then((result) => {
         if (result.isConfirmed) {
-          showNextQuestion();
+          if (rule) {
+            endGame();
+          } else {
+            showNextQuestion();
+          }
         }
       });
     }
