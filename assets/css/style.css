@@ -26,7 +26,7 @@ body {
 }
 
 #container h1 {
-    color: #850000;
+    color: #2C0A0A;
     font-size: 4rem;
     font-weight: bolder;
     border: 0.5rem solid black;
@@ -51,7 +51,10 @@ body {
   /* Add styling for h2 */
 
   #navigate h2 {
-    color: black;
+    background-color: #ffad33;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    color: #2C0A0A;
     font-size: 3rem;
     margin-bottom: 3rem;
     text-align: center;
@@ -60,16 +63,18 @@ body {
   /* Add styling for the score */
 
   #navigate #score {
+    background-color: #ffad33;
+    border-radius: 2rem;
+    padding: 1rem;
     width: 100%;
     height: 100%;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bolder;
-    cursor: pointer;
     text-align: center;
-    padding: 1rem;
-    background-color: #fff;
     color: black;
     margin-bottom: 2rem;
+    cursor: default;
+  
   }
 
   /* Add styling for the 'Play Again' button */
@@ -83,7 +88,7 @@ body {
     border-radius: 2rem;
     cursor: pointer;
     margin-bottom: 2rem;
-    color: #850000;
+    color: #2C0A0A;
   }
 
   #navigate #play:hover {
@@ -102,7 +107,7 @@ body {
     border: 0.5rem solid black;
     border-radius: 2rem;
     cursor: pointer;
-    color: #850000;
+    color: #2C0A0A;
   }
 
   #start-icon:hover {
