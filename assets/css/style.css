@@ -16,6 +16,8 @@ body {
   background-color: #ffad33;
 }
 
+/* Styling for main container */
+
 #container {
     background: #fff;
     margin: 12rem auto 0;
@@ -24,6 +26,8 @@ body {
     width: 85%;
     max-width: 100rem;
 }
+
+/* Styling for Quiz header */
 
 #container h1 {
     color: #2C0A0A;
@@ -48,7 +52,7 @@ body {
     margin: 10rem auto 0;
   }
 
-  /* Add styling for h2 */
+  /* Add styling for Question Number */
 
   #navigate h2 {
     background-color: #ffad33;
@@ -116,6 +120,8 @@ body {
   box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.2);
   }
 
+/* Styling for the Q&A container */
+
   #quiz {
     background-color: #fff;
     border-radius: 2rem;
@@ -124,11 +130,15 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   }
 
+  /* Styling for quiz questions */
+
 #quiz #question {
   font-family: 'Roboto Mono', monospace;
   font-size: 2.5rem;
   font-weight: bold;
 }
+
+/* Styling for the choice buttons container */
 
 #option {
     display: grid;
@@ -161,6 +171,8 @@ body {
 .hide {
     display: none;
   }
+
+  /* Styling for the Sweet Alert API which displays alerts when a question is answered */
 
   .swal2-title {
     font-size: 2rem !important;
