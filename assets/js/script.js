@@ -50,7 +50,9 @@ startIcon.addEventListener("click", startGame);
 
 let shuffledQuestions = questions.sort(() => Math.random() - .5);
 
-// Define the startGame function to display the question when the Start Icon is clicked
+/**
+ * Starts the quiz game
+ */
 
 function startGame() {
     startIcon.classList.add("hide");
@@ -61,7 +63,10 @@ function startGame() {
     showNextQuestion();
   }
 
-//Declare showNextQuestion function to run an endGame function when the game is over and set the questions and answers text content
+
+/**
+ * Displays the next question in the game and calls the endGame function when the last question has been answered
+ */
 
 function showNextQuestion() {
     questionNumber.textContent = "Question " + questionCount + " of " + questions.length;
@@ -78,7 +83,11 @@ function showNextQuestion() {
   questionCount++;
 }
 
-// Define the checkAnswer function to check if the provided answer is correct or not and alert the user accordingly
+/**
+ * Checks if the provided answer is correct or not and alerts the user accordingly using the Sweet Alert API
+ * 
+ * @param {number} index - The user's selected answer index
+ */
 
 function checkAnswer(index) {
     let rule = currentQuestionIndex === questions.length;
@@ -132,8 +141,9 @@ answerContent.forEach(function(element, index) {
   });
 });
 
-// Add an endGame function to display the score of the user and a 'Play Again' button when the game is over
-
+/**
+ * Ends the quiz game, displays the final score to the user and gives the user the option to play again
+ */
 function endGame() {
   startIcon.classList.add("hide");
   quizContainer.classList.add("hide");
@@ -144,12 +154,15 @@ function endGame() {
 }
 
 // Add Event listener to the 'Play Again' button which resets the questions index and score, shuffles the questions array and calls the startGame function
+
 playAgain.addEventListener("click", function() {
   currentQuestionIndex = 0;
   score = 0;
   questionCount = 1;
   questionNumber.classList.remove("hide");
+
   // Use the slice method to create a new array with the current questions and then shuffle the array using the sort method
+
   shuffledQuestions = questions.slice().sort(() => Math.random() - 0.5);
   startGame();
 });
