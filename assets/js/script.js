@@ -39,6 +39,7 @@ let score = 0;
 let playAgain = document.getElementById("play");
 let currentQuestionIndex = 0;
 let currentQuestion = questions[currentQuestionIndex];
+let questionContain = document.getElementById("question-number-container");
 let questionNumber = document.getElementById("question-number");
 let questionCount = 1;
 
@@ -59,6 +60,7 @@ function startGame() {
     quizContainer.classList.remove("hide");
     userScore.classList.add("hide");
   playAgain.classList.add("hide");
+  questionContain.classList.remove("hide");
   questionNumber.classList.remove("hide");
     showNextQuestion();
   }
@@ -150,6 +152,7 @@ function endGame() {
   userScore.classList.remove("hide");
   userScore.textContent = "Your score is " + score + "/" + questions.length;
   playAgain.classList.remove("hide");
+  questionContain.classList.add("hide");
   questionNumber.classList.add("hide");
 }
 
