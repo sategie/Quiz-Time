@@ -186,3 +186,37 @@ body {
     color: green;
     font-size: 2rem;
   }
+
+  /* Media query for 450px and below */
+
+  @media screen and (max-width: 450px) {
+
+    #navigate {
+        width: 60%;
+    }
+
+    #container h1 {
+        font-size: 3.8rem;
+    }
+
+    #navigate h2 {
+        font-size: 2.8rem;
+    }
+
+    #quiz {
+        display: grid;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    /* Prevent quiz container from displaying before the game starts and after the game ends */
+    #quiz.hide {
+        display: none;
+    }
+
+    #quiz #question {
+        font-size: 1.9rem;
+        text-align: center;
+      }
+      
+  }
