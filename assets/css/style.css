@@ -221,6 +221,29 @@ body {
       
   }
 
+  /* Media query for 400px and below, to reduce the Sweet Alert pop-up box and its contents*/
+
+  @media screen and (max-width: 400px) {
+    .swal2-title {
+        font-size: 1.5rem !important;
+      }
+    
+      .swal2-actions {
+        font-size: 1.5rem;
+      }
+    
+      #swal2-html-container {
+        color: green;
+        font-size: 1.5rem;
+      }
+
+      .swal2-popup {
+        width: 25rem !important;
+      }
+    
+
+  }
+
   /* Media query for 350px and below */
 
   @media screen and (max-width: 350px) {
