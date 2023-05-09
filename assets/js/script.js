@@ -71,7 +71,7 @@ function startGame() {
  */
 
 function showNextQuestion() {
-    questionNumber.textContent = "Question " + questionCount + " of " + questions.length;
+    questionNumber.textContent = questionCount + " of " + questions.length;
   if (currentQuestionIndex >= shuffledQuestions.length) {
     endGame();
   } else {
