@@ -93,6 +93,7 @@ body {
     cursor: pointer;
     margin-bottom: 2rem;
     color: #2C0A0A;
+    padding: 1rem;
   }
 
   #navigate #play:hover {
@@ -112,6 +113,7 @@ body {
     border-radius: 2rem;
     cursor: pointer;
     color: #2C0A0A;
+    padding: 1rem;
   }
 
   #start-icon:hover {
@@ -192,7 +194,7 @@ body {
   @media screen and (max-width: 450px) {
 
     #navigate {
-        width: 60%;
+        width: 70%;
     }
 
     #container h1 {
