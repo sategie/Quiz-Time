@@ -227,16 +227,16 @@ body {
 
   @media screen and (max-width: 400px) {
     .swal2-title {
-        font-size: 1.5rem !important;
+        font-size: 1.7rem !important;
       }
     
       .swal2-actions {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
       }
     
       #swal2-html-container {
         color: green;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
       }
 
       .swal2-popup {
