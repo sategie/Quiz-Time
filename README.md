@@ -21,11 +21,16 @@ Quiz-Time is a quiz game with a list of 10 questions spanning different fields -
 
     - When a user selects the correct choice, a dialog box appears showing 'Correct Answer!' with a green check mark and the 'Next Question' button is displayed
     - When a user selects the incorrect choice, a dialog box appears showing 'Wrong Answer!' with a red X sign. The correct answer displays in green below the alert and the 'Next Question' button is also displayed.
+    - When the last question is reached, the alert dialog box displays the corresponding 'Correct Answer!' or 'Incorrect Answer!' message, but instead of showing 'Next Question, it displays 'Finish Quiz'.
 
     ![Image showing dialog box when the correct answer is selected](/documentation/alert-correct.png)
 
     ![Image showing dialog box when the incorrect answer is selected](/documentation/alert-wrong.png)
 
+    ![Image showing the 'Finish Quiz' button when the last question is answered](/documentation/alert-finish.png)
+
     
+
+
 
 
