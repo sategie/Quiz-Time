@@ -49,7 +49,7 @@ startIcon.addEventListener("click", startGame);
 
 // Define a shuffledQuestions variable to randomize the questions
 
-let shuffledQuestions = questions.sort(() => Math.random() - .5);
+let shuffledQuestions = questions.sort(() => Math.random() - 0.5);
 
 /**
  * Starts the quiz game
@@ -169,6 +169,3 @@ playAgain.addEventListener("click", function() {
   shuffledQuestions = questions.slice().sort(() => Math.random() - 0.5);
   startGame();
 });
-
-
-
