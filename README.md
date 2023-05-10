@@ -29,7 +29,23 @@ Quiz-Time is a quiz game with a list of 10 questions spanning different fields -
 
     ![Image showing the 'Finish Quiz' button when the last question is answered](/documentation/alert-finish.png)
 
-    
+- **ScoreHTML5 and Replay page**
+
+    - When the game ends, the user is presented with the total score.
+    - The user also has the option to replay the game by clicking on the 'Play Again' button.
+
+    ![Image showing the Score and Replay page when the game ends](/documentation/score-replay.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
