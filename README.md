@@ -8,12 +8,24 @@ Quiz-Time is a quiz game with a list of 10 questions spanning different fields -
 
 ## Features
 
-- **Main Page**
-    - The page that appears as soon as the URL loads is the 'Start-Quiz' page.
-    - As soon as the user clicks on 'Start-Quiz', the first question is displayed along with the choices.
+- **Landing Page**
 
-    ![Image of main page showing the Start-Quiz button](/documentation/start-quiz.png)
+    - The page that appears as soon as the URL loads is the 'Start Quiz' page.
+    - As soon as the user clicks on 'Start Quiz', the first random question is displayed along with the choices and question number.
 
-    ![Image showing the page which appears after the Start-Quiz button is clicked](/documentation/quiz-questions.png)
+    ![Image of main page showing the 'Start Quiz' button](/documentation/start-quiz.png)
 
-- 
+    ![Image showing the page which appears after the 'Start Quiz' button is clicked](/documentation/quiz-questions.png)
+
+- **Alert Dialog Box**
+
+    - When a user selects the correct choice, a dialog box appears showing 'Correct Answer!' with a green check mark and the 'Next Question' button is displayed
+    - When a user selects the incorrect choice, a dialog box appears showing 'Wrong Answer!' with a red X sign. The correct answer displays in green below the alert and the 'Next Question' button is also displayed.
+
+    ![Image showing dialog box when the correct answer is selected](/documentation/alert-correct.png)
+
+    ![Image showing dialog box when the incorrect answer is selected](/documentation/alert-wrong.png)
+
+    
+
+
