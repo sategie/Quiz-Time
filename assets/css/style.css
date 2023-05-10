@@ -74,6 +74,10 @@ body {
     justify-content: center;
   }
 
+  #question-number-container.hide {
+    display: none;
+  }
+
   /* Add styling for the score */
 
   #navigate #score {
