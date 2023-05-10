@@ -223,6 +223,10 @@ body {
         display: grid;
         justify-content: center;
         margin-top: 2rem;
+
+        .btn {
+            padding: 1rem;
+          }
     }
 
     /* Prevent quiz container from displaying before the game starts and after the game ends */

@@ -8,7 +8,7 @@ const questions = [
   
     {
       quest: "What is the capital of Nigeria?",
-      answers: ["Lagos", "Ibadan", "Abuja", "Port-Harcourt"], correctIndex: 2
+      answers: ["Lagos", "Ibadan", "Abuja", "Edo"], correctIndex: 2
     },
   
     {
@@ -24,7 +24,32 @@ const questions = [
     {
       quest: "How many milliseconds are there in a second?",
       answers: ["24", "60", "100", "1000"], correctIndex: 3
-    }
+    },
+
+    {
+        quest: "Where is the largest desert in the world located?",
+        answers: ["Africa", "Europe", "Asia", "Antarctica"], correctIndex: 3
+      },
+    
+      {
+        quest: "Arachnophobia is the fear of what?",
+        answers: ["Dogs", "Cats", "Spiders", "Bees"], correctIndex: 2
+      },
+    
+      {
+        quest: "In what year did the Berlin wall fall?",
+        answers: [1989, 1999, 1945, 2000], correctIndex: 0
+      },
+    
+      {
+        quest: "Where did the rock band 'The Cranberries' originate from?",
+        answers: ["USA", "Ireland", "Denmark", "Sweden"], correctIndex: 1
+      },
+    
+      {
+        quest: "What is the national animal of Sweden?",
+        answers: ["Bear", "Tiger", "Lion", "Moose"], correctIndex: 3
+      }
 
   ];
 
