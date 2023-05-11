@@ -4,7 +4,19 @@ Quiz-Time is a quiz game with a list of 10 questions spanning different fields -
 
 ![Image of Quiz-Time app on different screen sizes and showing the different screens of the app](/documentation/quiz-time.png)
 
-<!-- Add contents here -->
+## Contents
+
+- [Features](#features)
+
+- [Technologies Used](#technologies-used)
+
+- [Testing](#testing)
+
+- [Deployment](#deployment)
+
+- [Credits](#credits)
+
+- [Acknowledements](#acknowledgements)
 
 ## Features
 
