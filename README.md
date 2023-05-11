@@ -83,6 +83,25 @@ Quiz-Time is a quiz game with a list of 10 questions spanning different fields -
 
     http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fsategie.github.io%2FQuiz-Time%2F&usermedium=all&vextwarning=&warning=1
 
+- **Browser Compatibility**
+
+ - The project was tested on the browsers listed below. The project worked as expected on all three browsers without any significant differences noticed.
+
+    - Google Chrome Version 112.0.5615.138 (Official Build) (64-Bit)
+
+    - Microsoft Edge Version 113.0.1774.35 (Official build) (64-bit)
+
+    - Firefox Version 113.0 (64-Bit)
+
+- **Lighthouse**
+
+    - Lighthouse was used to test the project based on the following criteria: Performance, Accessibility, Best Practices and SEO. Google Chrome (Incognito Mode) was used.
+
+    ![Screenshot of Lighthouse testing results using Google Chrome Incognito Mode](/documentation/testing/lighthouse-testing.png)
+
+
+
+
 
 
 
