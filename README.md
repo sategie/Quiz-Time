@@ -60,6 +60,35 @@ Quiz-Time is a quiz game with a list of 10 questions spanning different fields -
 
 - AM I Responsive: This was used to show the project's responsiveness on various screen sizes.
 
+## Testing
+
+- **Validators**
+
+    - HTML
+        - No errors were found using the official W3C validator.
+
+    - CSS
+        - No errors were found using the W3C CSS (jigsaw) validator.
+
+    - Javascript
+        - No errors were found in the Javascript using JSHint.
+
+    - ![Screenshot of HTML validator showing no errors in HTML](/documentation/testing/html-validator.png)
+
+    - ![Screenshot of CSS validator showing no erros in CSS](/documentation/testing/css-validator.png)
+
+    - ![Screenshot of Javascript validator showing no erros in Javascript code](/documentation/testing/javascript-validator.png)
+
+    The link to the full CSS validation results can be found here:
+
+    http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fsategie.github.io%2FQuiz-Time%2F&usermedium=all&vextwarning=&warning=1
+
+
+
+
+
+
+
 
 
 
