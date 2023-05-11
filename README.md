@@ -50,9 +50,9 @@ Quiz-Time is a quiz game with a list of 10 questions spanning different fields -
 
 **Features Left to Implement**
 
-    - A Username field to enter a username before starting the quiz.
+- A Username field to enter a username before starting the quiz.
 
-    - A list of high scores linked to each user who plays the game.
+- A list of high scores linked to each user who finishes the game.
 
 ## Technologies Used
 
