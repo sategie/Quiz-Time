@@ -1,6 +1,7 @@
 // Create Q&A array
 
-const questions = [{
+const questions = [
+{
     quest: "How many continents are there in the world?",
     answers: ["5", "7", "8", "9"],
     correctIndex: 1
