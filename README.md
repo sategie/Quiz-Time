@@ -52,13 +52,21 @@ Quiz-Time is a quiz game with a list of 10 questions spanning different fields -
 
 - Color Contrast Checker (coolors.co): This was also used to compare color contrasts to see how different text colors fit in with different background colors.
 
-- Screenpresso - This was used to take screenshots/GIFs of the project's functionalities.
+- Screenpresso - This was used to take screenshots of the project's functionalities.
 
 - Tables Generator: This was used to generate the table used in the Testing section.
 
 - Beautifier: Used to remove extra unnecessary spaces and improve the indentation in the code.
 
 - AM I Responsive: This was used to show the project's responsiveness on various screen sizes.
+
+    - Desktop 1600x992px scaled down to scale(0.3181)
+
+    - Laptop 1280x802px scaled down to scale(0.277)
+
+    - Tablet 768x1024px scaled down to scale(0.219)
+
+    - Mobile 320x480px scaled down to scale(0.219)
 
 ## Testing
 
