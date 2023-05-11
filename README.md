@@ -113,6 +113,23 @@ Quiz-Time is a quiz game with a list of 10 questions spanning different fields -
 | 'Play Again' Button:<br>Hover                     | Hover on the 'Play Again' button     | - Button moves slightly up.<br><br>- Background colour changes to green.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | PASS       |
 | 'Play Again' Button:<br>Click                     | Click on the 'Play Again' button     | - The game starts again.<br><br>- The first random question and corresponding choices appear.<br><br>- The question number is displayed.                                                                                                                                                                                                                                                                                                                                                                                                                   | PASS       |
 
+- **Unfixed Bugs**
+
+    - There are no unfixed bugs in the project
+
+## Deployment
+
+- The site was deployed to Github using the following steps:
+
+    1. In the Quiz Time repository in Github, click on *Settings*.
+
+    2. Click on *Pages* under *Code and Automation* on the left hand side.
+
+    3. Under *Pages*, select the *main* branch from the dropdown menu in the *Branch* section and click on *Save*.
+
+    The project is live at https://sategie.github.io/Quiz-Time/
+
+
 
 
 
