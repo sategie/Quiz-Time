@@ -107,7 +107,7 @@ Quiz-Time is a quiz game with a list of 10 questions spanning different fields -
 
     The link to the full CSS validation results can be found here:
 
-    http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fsategie.github.io%2FQuiz-Time%2F&usermedium=all&vextwarning=&warning=1
+    [W3C CSS Validator](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fsategie.github.io%2FQuiz-Time%2F&usermedium=all&vextwarning=&warning=1)
 
 - **Browser Compatibility**
 
