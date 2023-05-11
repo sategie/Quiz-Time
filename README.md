@@ -1,6 +1,8 @@
-# Quiz-Time
+# Quiz Time
 
-Quiz-Time is a quiz game with a list of 10 questions spanning different fields - sports, entertainment, science, history etc - which tests one's general knowledge skills. The questions appear at random after each round and the correct answer is provided to the user when a wrong answer is selected. The game is created for devices with a minimum screen width of 320px.
+Quiz Time is an interactive quiz game with a list of 10 questions spanning different fields - sports, entertainment, science, history etc - which tests one's general knowledge skills. 
+The questions appear at random after each round, and the correct answer is provided to the user when a wrong answer is selected. 
+The game is created for devices with a minimum screen width of 320px.
 
 ![Image of Quiz-Time app on different screen sizes and showing the different screens of the app](/documentation/quiz-time.png)
 
@@ -25,6 +27,10 @@ Quiz-Time is a quiz game with a list of 10 questions spanning different fields -
     - The color combinations were chosen to elicit a lively and engaging feeling when interacting with the application.
 
     - The various colors used were chosen with contrast being the major deciding factor.
+
+- **Font Sizes**
+
+    - The font sizes for the project are displayed using rem units to improve the readability on various screen sizes without the need to use too many media queries. 
 
 - **Landing Page**
 
