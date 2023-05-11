@@ -129,6 +129,40 @@ Quiz-Time is a quiz game with a list of 10 questions spanning different fields -
 
     The project is live at https://sategie.github.io/Quiz-Time/
 
+    - **How to Fork the Repository**
+
+        - You can make a copy of the project by doing the following:
+
+            1. Go to the project's Github repository https://github.com/sategie/Quiz-Time
+
+            2. Click on the *Fork* button on the top right of the screen.
+
+        - Note: Changes made here do not affect the original repository
+
+    - **How to Clone the Repository**
+
+        - The repository can be cloned by doing the following:
+
+            1. Go to the project's Github repository https://github.com/sategie/Quiz-Time
+
+            2. Click the green *Code* button on the right.
+
+            3. Click on *HTTPS* and copy the link.
+
+            4. Open Git and change the working directory to where you want to have the cloned directory.
+
+            5. Type *git clone* and pste the copied URL.
+
+        - You can make changes to the project by doing the following:
+
+            1. Type *git add .*
+
+            2. Type *git commit -m* and add a short comment within quotes .e.g git commit -m "This is a short comment example"
+
+            3. Type *git push* to push the changes to the repository
+
+        - Note: Any update commited to the main branch immediately reflects in the hosted site. 
+
 
 
 
