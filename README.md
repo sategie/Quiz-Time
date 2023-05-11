@@ -20,6 +20,12 @@ Quiz-Time is a quiz game with a list of 10 questions spanning different fields -
 
 ## Features
 
+- **Color Scheme**
+
+    - The color combinations were chosen to elicit a lively and engaging feeling when interacting with the application.
+
+    - The various colors used were chosen with contrast being the major deciding factor.
+
 - **Landing Page**
 
     - The page that appears as soon as the URL loads is the 'Start Quiz' page.
