@@ -191,7 +191,7 @@ Quiz-Time is a quiz game with a list of 10 questions spanning different fields -
 
 ## Credits
 
-- Idea for shuffling the quiz questions was taken from an article: https://medium.com/@apestruy/shuffling-an-array-in-javascript-8fcbc5ff12c7 
+- Idea for shuffling the quiz questions was taken from an article on Medium titled 'Shuffling an Array in Javascript'. [See Article Here](https://medium.com/@apestruy/shuffling-an-array-in-javascript-8fcbc5ff12c7)
 
 - The Open Sans and Roboto fonts used in the project were obtained from Google Fonts
 
