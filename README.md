@@ -163,7 +163,19 @@ Quiz-Time is a quiz game with a list of 10 questions spanning different fields -
 
         - Note: Any update commited to the main branch immediately reflects in the hosted site. 
 
+## Credits
 
+- Idea for shuffling the quiz questions was taken from an article: https://medium.com/@apestruy/shuffling-an-array-in-javascript-8fcbc5ff12c7 
+
+- The Open Sans and Roboto fonts used in the project were obtained from Google Fonts
+
+## Acknowledgements
+
+- I am thankful for having a wonderful family who support me in everything I do. Every word of encouragement, every extra pair of eyes and every 'proud of you' look I get is a real boost which keeps me going strong.
+
+- My mentor Brian Macharia has been really helpful in my coding journey so far, and I am extremely grateful to him for sharing his wealth of experience with me and providing amazing tips and areas of improvement.
+
+- A special mention goes to the Code Institue community on Slack for the valuable contributions that aided me in completing this project.
 
 
 
